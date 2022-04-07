@@ -1,0 +1,61 @@
+{% extends "base.html" %} {% block title %}Signup{% endblock %} {% block content
+%}
+
+<div class="container">
+  <div class="row">
+    <form style="border: 1px solid #ccc" method="POST">
+      <div class="container">
+        <h1>Sign Up</h1>
+        <p>Please fill in this form to create an account.</p>
+        <hr />
+        <label for="name"><b>Name</b></label>
+        <input type="text" placeholder="Enter name" name="name"  />
+
+        <label for="email"><b>Email</b></label>
+        <input type="email" placeholder="Enter Email" name="email"  />
+
+        <label for="password1"><b>password</b></label>
+        <input
+          type="password"
+          placeholder="Enter password"
+          name="password1"
+          
+        />
+
+        
+        <label for="password2"><b>Confirm password</b></label>
+        <input
+          type="password"
+          placeholder="Enter password"
+          name="password2"
+          
+        />
+
+        <label for="contact"><b>Contact</b></label>
+        <input
+          type="text"
+          placeholder="Enter Contact"
+          name="contact"
+          
+        />
+
+        <label for="address"><b>Address</b></label>
+        <input
+          type="text"
+          placeholder="Enter Address"
+          name="address"
+         
+        />
+
+        <label for="DOB"><b>DOB</b></label>
+        <input type="text" placeholder="Enter DOB" name="DOB"  />
+
+        <div class="signbtn">
+          <button type="submit" class="btn btn-primary">Sign Up</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+{% endblock %}

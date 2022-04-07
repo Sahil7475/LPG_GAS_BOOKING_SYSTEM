@@ -1,0 +1,30 @@
+{% extends "base.html" %} {% block title %}Log-in{% endblock %} {% block content
+%}
+<div class="container">
+  <div class="row">
+    <form style="border: 1px solid #ccc" method="POST">
+      <div class="container-1">
+        <h1>Log in</h1>
+
+        <label for="email"><b>Email</b></label>
+        <input type="email" placeholder="Enter Email" name="email" required />
+
+        <label for="password"><b>password</b></label>
+        <input
+          type="password"
+          placeholder="Enter password"
+          name="password"
+          required
+        />
+
+        <div class="signbtn1">
+          <button type="submit" class="btn btn-outline-dark">Log-in</button>
+        </div>
+
+        <p class="dont">Don't have an Account! <a href="{{ url_for('auth.sign_up') }}">Sign Up Here</a></p>
+      </div>
+    </form>
+  </div>
+</div>
+
+{% endblock %}
