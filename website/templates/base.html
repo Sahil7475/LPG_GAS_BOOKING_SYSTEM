@@ -14,6 +14,7 @@
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
       crossorigin="anonymous"
     /> 
+    <link rel="stylesheet" href="{{ url_for('static', filename='base.css')}}">
     <link rel="stylesheet" href="{{ url_for('static', filename='signup.css')}}">
     <link rel="stylesheet" href="{{ url_for('static', filename='login.css')}}">
     
@@ -21,27 +22,51 @@
     <title>{% block title %}Home{% endblock %}</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbar"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbar">
-        <div class="navbar-nav">
-         
+    <section class="header">
+
+        <a href="#" class="logo">  Gas Booking System </a>
+     
+        <!-- <nav class="navbar">
+           <a href="#home">home</a>
+           <a href="#about">about</a>
+           <a href="#food">food</a>
+           <a href="#gallery">gallery</a>
+           <a href="#menu">menu</a>
+           <a href="#order">order</a>
+           <a href="#blogs">blogs</a>
+        </nav> -->
+     
+        <!-- <div id="menu-btn" class="fas fa-bars"></div> -->
+     
+     </section>
+     <hr >
+     <section class="header-1">
+
+        <!-- <a href="#" class="logo-1"> <i class="fas fa-utensils"></i>  </a> -->
+     
+        <nav class="navbar">
           <a class="nav-item nav-link" id="home" href="/">Home</a>
-          <a class="nav-item nav-link" id="logout" href="/logout">Logout</a>
+          
+          <a href="#about">about</a>
+          <a href="#food">Dashboard</a>
+          <a href="#gallery">Admin</a>
+          <a href="#menu">User</a>
+          <a href="#order">Contact us</a>
+          
          
           <a class="nav-item nav-link" id="login" href="/login">Login</a>
           <a class="nav-item nav-link" id="signUp" href="/sign-up">Sign Up</a>
       
-        </div>
-      </div>
-    </nav>
+        </nav>
+
+        <section>
+
+        </section>
+     
+        <!-- <div id="menu-btn" class="fas fa-bars"></div> -->
+     
+     </section>
+
 
     {% with messages = get_flashed_messages(with_categories=true) %} {% if
     messages %} {% for category, message in messages %} {% if category ==
