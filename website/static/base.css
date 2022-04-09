@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600&display=swap');
+body{
+   height: 75vh;
+}
 
 :root{
    --peru:#cd9452;
@@ -14,7 +16,7 @@
 }
 
 *{
-   font-family: 'Dosis', sans-serif;
+   /* font-family: 'Dosis', sans-serif; */
    margin:0; padding:0;
    box-sizing: border-box;
    outline: none; border:none;
@@ -84,6 +86,7 @@ section{
    padding-top: 2rem;
    padding-bottom: 2rem;
    display: flex;
+   height: 60px;
    align-items: center;
    justify-content: space-between;
    box-shadow: var(--box-shadow);
@@ -97,6 +100,7 @@ section{
     padding-bottom: 0rem;
     display: flex;
     align-items: center;
+    height: 50px;
     justify-content: space-between;
     box-shadow: var(--box-shadow);
     position: sticky;
