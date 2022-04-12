@@ -7,7 +7,7 @@ from sqlalchemy.sql import func
 
 
 class user(db.Model, UserMixin):
-    id= db.Column(db.Integer, primary_key=True)
+    u_id= db.Column(db.Integer, primary_key=True)
     u_name= db.Column(db.String(50))
     u_contact_no=db.Column(db.Numeric)
     u_address= db.Column(db.String(200))

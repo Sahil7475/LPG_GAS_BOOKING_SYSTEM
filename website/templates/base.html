@@ -17,18 +17,24 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='base.css')}}">
     <link rel="stylesheet" href="{{ url_for('static', filename='signup.css')}}">
     <link rel="stylesheet" href="{{ url_for('static', filename='login.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='home.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='contact.css')}}">
     
 
     <title>{% block title %}Home{% endblock %}</title>
   </head>
   <body>
+    
     <section class="header">
-
-        <a href="#" class="logo">  Gas Booking System </a>
+     
+      
+      <!-- <div class="img"><img src="logo.png"> </div> -->
+        <a href="#" class="logo"> LPG Booking System </a>
      
      
      </section>
-     <hr >
+     <!-- <hr > -->
+     <div class="mid-sec"></div>
      <section class="header-1">
 
       
@@ -37,13 +43,14 @@
           <a class="nav-item nav-link" id="home" href="/">Home</a>
           
           <a href="#about">about</a>
-          <a href="#food">Dashboard</a>
-          <a href="#gallery">Admin</a>
-          <a href="#menu">User</a>
-          <a href="#order">Contact us</a>
+          <a href="#dashboard">Dashboard</a>
+          <a href="#admin">Admin</a>
+          <a href="#user">User</a>
+          <!-- <a href="#contactus">Contact us</a> -->
           
          
           <a class="nav-item nav-link" id="login" href="/login">Login</a>
+          <a class="nav-item nav-link" id="contact" href="/contact">contact</a>
           <!-- <a class="nav-item nav-link" id="signUp" href="/sign-up">Sign Up</a> -->
       
         </nav>
