@@ -13,56 +13,50 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
       crossorigin="anonymous"
-    /> 
-    <link rel="stylesheet" href="{{ url_for('static', filename='base.css')}}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='signup.css')}}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='login.css')}}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='home.css')}}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='contact.css')}}">
-    
+    />
+    <link rel="stylesheet" href="{{ url_for('static', filename='base.css')}}" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='signup.css')}}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='login.css')}}"
+    />
+    <link rel="stylesheet" href="{{ url_for('static', filename='home.css')}}" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='contact.css')}}"
+    />
 
     <title>{% block title %}Home{% endblock %}</title>
   </head>
   <body>
-    
     <section class="header">
-     
-      
       <!-- <div class="img"><img src="logo.png"> </div> -->
-        <a href="#" class="logo"> LPG Booking System </a>
-     
-     
-     </section>
-     <!-- <hr > -->
-     <div class="mid-sec"></div>
-     <section class="header-1">
+      <a href="#" class="logo"> LPG Booking System </a>
+    </section>
+    <!-- <hr > -->
+    <div class="mid-sec"></div>
+    <section class="header-1">
+      <nav class="navbar">
+        <a class="nav-item nav-link" id="home" href="/">Home</a>
 
-      
-     
-        <nav class="navbar">
-          <a class="nav-item nav-link" id="home" href="/">Home</a>
-          
-          <a href="#about">about</a>
-          <a href="#dashboard">Dashboard</a>
-          <a href="#admin">Admin</a>
-          <a href="#user">User</a>
-          <!-- <a href="#contactus">Contact us</a> -->
-          
-         
-          <a class="nav-item nav-link" id="login" href="/login">Login</a>
-          <a class="nav-item nav-link" id="contact" href="/contact">contact</a>
-          <!-- <a class="nav-item nav-link" id="signUp" href="/sign-up">Sign Up</a> -->
-      
-        </nav>
+        <a class="none" href="#about">About</a>
+        <a href="#dashboard">Dashboard</a>
+        <a href="#admin">Admin</a>
+        <a href="#user">User</a>
+        <!-- <a href="#contactus">Contact us</a> -->
 
-        <section>
+        <a class="nav-item nav-link" id="login" href="/login">Login</a>
+        <a class="nav-item nav-link" id="contact" href="/contact">contact</a>
+        <!-- <a class="nav-item nav-link" id="signUp" href="/sign-up">Sign Up</a> -->
+      </nav>
 
-        </section>
-     
-        <!-- <div id="menu-btn" class="fas fa-bars"></div> -->
-     
-     </section>
+      <section></section>
 
+      <!-- <div id="menu-btn" class="fas fa-bars"></div> -->
+    </section>
 
     {% with messages = get_flashed_messages(with_categories=true) %} {% if
     messages %} {% for category, message in messages %} {% if category ==

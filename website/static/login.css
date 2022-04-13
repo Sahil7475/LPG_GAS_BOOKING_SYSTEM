@@ -1,0 +1,68 @@
+.body1{
+    display: flex;
+    height: 65vh;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border: 2px solid  #ccc;
+   
+}
+
+.container1{
+    max-width: 630px;
+    width:100%;
+    padding: 25px 30px;
+    border-radius: 5px;
+    
+    
+    
+
+}
+
+.container1 form .user-details1 .input-box1{
+    width:100%;
+
+
+
+}
+form .user-details1 .input-box1{
+    margin-bottom: 15px;
+     width:calc(100%/2 -20px);
+ }
+ 
+ .user-details1 .input-box1 .details{
+     font-weight: 500;
+     font-size: 20px;
+     margin-bottom: 5px;
+     display: block;
+ }
+
+ .user-details1 .input-box1 input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    
+}
+
+form .button1 input{
+    
+    height: 100%;
+    width:50%;
+    outline: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 8px;
+    margin-left: 150px;
+    margin-top: 10px;
+}
+
+.signup{
+    padding-top: 50px;
+    font-size: 15px;
+}

@@ -6,6 +6,9 @@ from . import db
 from datetime import date
 auth = Blueprint('auth',__name__)
 
+
+
+
 @auth.route('/login', methods=['GET' ,'POST'])
 def login():
     if request.method =='POST':
@@ -61,3 +64,7 @@ def sign_up():
     return render_template('sign_up.html')  
 
     """ u_name u_contact_no u_address u_date_of_birth u_email u_passw """
+
+@auth.route('/contact')
+def contact():
+    return render_template('contact.html') 

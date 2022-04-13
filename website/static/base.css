@@ -22,9 +22,13 @@ body{
    outline: none; border:none;
    text-decoration: none;
    transition: all 0.4s cubic-bezier(.43,1.1,.62,1.08);
-   text-transform: capitalize;
+  /*  text-transform: capitalize; */
+/*   text-decoration: none; */
 }
-
+/* .none{
+   text-decoration: none;
+}
+ */
 * > img{
    user-select: none;
    pointer-events: none;
