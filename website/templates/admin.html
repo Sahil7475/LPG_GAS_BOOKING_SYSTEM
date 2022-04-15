@@ -1,0 +1,33 @@
+{% extends "base.html" %} {% block title %}Log-in{% endblock %} {% block content
+    %}
+    <div class="body1">
+      <div class="container1">
+        <div class="title">Login</div>
+       
+        <form action="" method="POST">
+          <div class="user-details1">
+            <div class="input-box1">
+              <span class="details">Email</span>
+              <input type="email" name="email" placeholder="Enter the Email" required>
+            </div>
+            
+            <div class="input-box1">
+              <span class="details">Password</span>
+              <input type="password" name="password" placeholder="Enter the password" required>
+            </div>
+           
+            
+           
+          </div>
+          <div class="button1">
+            <input type="submit" value="Login">
+          </div>
+    
+          
+        </form>
+        <p class="signup">Don't have an Account! <a href="{{ url_for('auth.sign_up') }}">Sign Up Here</a></p>
+      </div>
+      </div>
+    
+    {% endblock %}
+    

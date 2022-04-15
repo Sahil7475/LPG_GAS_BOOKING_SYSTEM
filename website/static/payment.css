@@ -1,0 +1,127 @@
+.container7 .inputbox input{
+    border-color: #ccc;
+}
+
+.container7{
+    background-color: #f2f2f2;
+    border: 2px solid  #ccc;
+    opacity: 1;
+    border-width: thick;
+    color: black;
+    box-shadow: #ccc;
+}
+.container7{
+    min-height: 70vh;
+    
+  margin-left: 45px;
+  border-color: #ccc !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    width: 500px;
+    flex-flow: column;
+    border-radius: 15px;
+}
+
+.container7 form{
+   
+    border-radius: 5px;
+    opacity: 4;
+    box-shadow: 0 10px 15px rgba(red, green, rgb(234, 255, 0), alpha);
+    width: 100%;
+    
+}
+
+.container form .inputbox{
+    margin-top: 24px;
+
+}
+.payment-form .input-box span{
+    
+    color: black;
+    padding-bottom: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 13px;
+}
+
+.payment-form  .flexbox select{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+
+}
+
+
+.payment-form .input-box input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    margin-bottom: 10px;
+
+    
+}
+.payment-form .flexbox{
+    display: flex;
+    margin-top: 10px;
+    gap: 15px;
+}
+
+.container7 form .submit-btn{
+    width: 50%;
+    background-color: white;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+    height: 5vh;
+    background-color: #ccc;
+    
+}
+
+
+.button{
+    display: flex;
+    gap: 10px;
+    
+}
+.container7 .title h1{
+    font-weight:bolder;
+    font-size: 34px;
+}
+.radio{
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 45px;
+    font-size: 16px;
+
+    font-weight: bold;
+
+}
+/* .radio__radio{
+    width: 1.22rem ;
+    height: 1.27rem;
+    border: 2px solid #d8e4e2;
+    border-radius: 50%;
+    box-sizing: border-box;
+    padding: 1px;
+} */
+.input-box1{
+    margin-bottom: 5px;
+}
+.h3{
+    margin-left: 5px;
+    font-weight: bold;
+    
+}

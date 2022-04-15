@@ -1,0 +1,82 @@
+{% extends "base.html" %} {% block title %}Log-in{% endblock %} {% block content
+    %}
+    <div class="body1">
+        <div class="container7">
+            <div class="title"><h1>Payment</h1></div>
+            <form action="" method="POST">
+                <div class="payment-form">
+        
+                    <div class="input-box1">
+                        
+                        <label for="cash" class="radio"><input type="radio" value="Cash" name="mode">
+                        <!-- <div class="radi__radio"></div> -->
+                        <div class="h3" >Cash</div>
+                    </label>
+                        <label for="Online" class="radio"><input type="radio" value="Online" name="mode">
+                            <!-- <div class="radio__radio"></div> -->
+                            <div class="h3">Online</div>
+                            </label>
+                    </div>
+                <div class="input-box">
+                   
+                    <span class="details">Card No</span>
+                    <input type="text" name="cardno" placeholder="Enter the card no" />
+                  </div>
+                  <div class="input-box">
+                    <span class="details">Card Holder number</span>
+                    <input type="text" name="holder" placeholder="Enter the number" />
+                  </div>
+                  <div class="flexbox">
+                      <div class="input-box">
+                          <span>Month</span>
+                          <select name="month" id="" class="month-input">
+                              <option value="month" selected disable>Month</option>
+                              <option value="01" >01</option>
+                              <option value="02" >02</option>
+                              <option value="03" >03</option>
+                              <option value="04" >04</option>
+                              <option value="05" >05</option>
+                              <option value="06" >06</option>
+                              <option value="07" >07</option>
+                              <option value="08" >08</option>
+                              <option value="09" >09</option>
+                              <option value="10" >10</option>
+                              <option value="11" >11</option>
+                              <option value="12" >12</option>
+                          </select>
+                      </div>
+                      <div class="input-box">
+                        <span>expiration yy</span>
+                        <select name="month" id="" class="month-input">
+                            <option value="year" selected disable>year</option>
+                            <option value="2022" >2022</option>
+                            <option value="2023" >2023</option>
+                            <option value="2024" >2024</option>
+                            <option value="2025" >2025</option>
+                            <option value="2026" >2026</option>
+                            <option value="2027" >2027</option>
+                            <option value="2028" >2028</option>
+                            <option value="2029" >2029</option>
+                            <option value="2030" >2030</option>
+                            <option value="2031" >2031</option>
+                            <option value="2032" >2032</option>
+                        </select>
+                    </div>
+                    <div class="input-box">
+                        <span >CVV</span>
+                        <input type="text" name="cvv" maxlength="4" class="cvv-input" placeholder="Enter CVV number" />
+                      </div>
+                  <!-- </div> -->
+                </div>
+                <div class="button">
+                <input type="submit" value="proceed" class="submit-btn">
+                <input type="submit" value="Reset" class="submit-btn"></div>
+            </form>
+            
+        </div>
+        
+        </div>
+        </div>
+
+
+{% endblock %}
