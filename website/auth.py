@@ -1,21 +1,19 @@
 
 from logging import error
-from flask import Blueprint,render_template, request ,flash, redirect, url_for
+from flask import Blueprint,render_template, request ,flash, redirect, url_for,Flask
 from .models import user
 from .models import payment
 from .models import booking
 from werkzeug.security import generate_password_hash, check_password_hash
 from . import db
 from datetime import date
-
+from flask_mail import Mail, Message
 from flask_login import login_user,login_required,logout_user,current_user
-
+from flask import current_app
+import smtplib
 
 
 auth = Blueprint('auth',__name__)
-
-
-
 
 @auth.route('/login', methods=['GET' ,'POST'])
 def login():
@@ -96,10 +94,13 @@ def dashboard():
 def admin():
     return render_template('admin.html', user=current_user) 
 
-@auth.route('/trackorder', methods=['GET' ,'POST'])
-def trackorder():
-    return render_template('trackorder.html', user=current_user)
+@auth.route('/orderhistory', methods=['GET' ,'POST'])
+def orderhistory():
+    if request.method == "GET":
+        User = user
+    return render_template('orderhistory.html', user=current_user, book=current_user.bookings)
 
+    
 @auth.route('/payment', methods=['GET' ,'POST'])
 def Payment():
     if request.method == 'POST':
@@ -115,7 +116,7 @@ def Payment():
         db.session.add(add)
         db.session.commit()
         flash("Payment successful", category="success")
-        return redirect(url_for('views.home'))    
+        return redirect(url_for('auth.reciept'))    
         
 
     return render_template('payment.html', user=current_user)
@@ -123,8 +124,18 @@ def Payment():
 @auth.route('/booking', methods=['GET' ,'POST'])
 def Booking():
     if request.method == 'POST':
-        
-        add=booking(booking_id=current_user.u_id,u_id=current_user.u_id)
+        address = request.form.get('address')
+        date = request.form.get('date')
+        email = request.form.get('email')
+       
+        message= "Your order is booked"
+        server= smtplib.SMTP("smtp.gmail.com", 587)
+        server.starttls()
+        server.login(user="sahilj7475@gmail.com",password="Sjadhav@7475")
+        server.sendmail(from_addr="sahilj7475@gmail.com", to_addrs=email,msg=message)
+      
+
+        add=booking(u_id=current_user.u_id,booking_delivery_date=date,booking_address=address)
         db.session.add(add)
         db.session.commit()
         flash("Your Order is booked please make a payment", category="success")
@@ -132,5 +143,8 @@ def Booking():
 
     return render_template('booking.html', user=current_user)
            
-		
-    
+
+@auth.route('/reciept', methods=['GET' ,'POST'])
+def reciept():		
+    return render_template("reciept.html", user=current_user)
+        

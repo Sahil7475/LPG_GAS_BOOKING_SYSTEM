@@ -15,12 +15,12 @@ class user(db.Model, UserMixin):
     u_date_of_birth= db.Column(db.Date)
     u_email= db.Column(db.String(60), unique=True)
     u_passw= db.Column(db.String(30))
-    bookings = db.relationship('booking', backref="book")
-    payments = db.relationship('payment')
+    bookings = db.relationship('booking', backref="user")
+    payments = db.relationship('payment', backref="payment")
     def get_id(self):
         return (self.u_id)
 
-class admin(db.Model, UserMixin):
+class admin(db.Model):
     admin_id= db.Column(db.Integer, primary_key=True)
     admin_name=db.Column(db.String(50))
     admin_contact_no=db.Column(db.Numeric)
@@ -32,7 +32,9 @@ class booking(db.Model):
     booking_id=db.Column(db.Integer, primary_key=True)
     booking_date_time=db.Column(db.DateTime(timezone=True), default=func.now())
     u_id =db.Column(db.Integer, db.ForeignKey('user.u_id'))
-    payments = db.relationship('payment')
+    booking_delivery_date= db.Column(db.Date)
+    booking_address=db.Column(db.String(400))
+    payments = db.relationship('payment', backref="book")
   
 
 
