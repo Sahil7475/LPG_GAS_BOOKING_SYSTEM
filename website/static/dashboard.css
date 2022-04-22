@@ -1,73 +1,143 @@
-.container5{
-    width: 120%;
-    /* margin: auto auto; */
-    justify-content: center;
-    margin: 10px;
-}
-.left{
-    /* background-color: #ccc; */
-    height: 50vh;
-    width: 80%;
-    border: 1px solid black;
-    border-radius: 10px;
-    /* opacity: 0.6; */
-    
-   
-}
-.col-7{
-    max-width: 65;
-}
-.right1 ,.right2{
- background-color: #ccc;
- height: 15vh;
- border: 1px solid black;
- border-radius: 10px;
- margin-left: 25px;
- /* opacity: 0.6; */
- 
-
-}
-
-/* .rght1{
-    margin-left: 5px;
-} */
-.topright{
-    margin-left: 5px;
-}
-.bottomright{
-    margin-top: 12px;
-    margin-left: 5px;
-}
-.bottomright1,.bottomright2{
-    background-color: #ccc;
-    height: 15vh;
-    border: 1px solid black;
-    border-radius: 10px;
-    margin-left: 25px;
-    /* opacity: 0.6; */
-
-}
-.rightbottom{
-    margin-top: 12px;
-    margin-left: 155px;
-}
-.rightbottom1{
-    /* background-color: #ccc; */
-    background-image: url('templates/profile.png');
-    height: 15vh;
-    border: 1px solid black;
-    border-radius: 10px;
-    /* opacity: 0.6; */
-}
-img{
-    width:45px;
-    height:45px;
-    align-items: center;
-    margin-left: 60px;
-}
-/* .img1{
+.container13 .row .left{
     width: 100%;
-} */
-.img-fluid{
-    background-color: aqua;
+}
+
+.container13 .row .left .card{
+    width: 100%;
+    margin: 0px;
+}
+
+.container13 .row .left .card .card-body{
+    height: 55vh;width: 100%;
+    margin-top: 15px;
+    border-radius: 5px;
+    border: 3px solid #ccc;
+    background-color: #f2f2f2;
+}
+
+.container13 .row .left .card .card-body .card-title{
+    font-size: 24px;
+    font-weight: bolder;
+    margin-left: 0px;
+}
+.container13 .row .left .card .card-body .val-box p{
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 1px;
+}
+.container13 .row .left .card{
+    border: none;
+}
+.val-box{
+   
+    border-radius: 5px;
+    margin-top: 15px;
+    height: 45vh;
+    
+}
+
+.val-box1{
+    border: 3px solid #ccc;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+}
+
+.val-box1 img{
+   height: 85px;
+   width: 85px;
+    margin-left: 65px;
+}
+
+.val-box1  h3{
+    font-weight: bolder;
+    letter-spacing: 2px;
+    margin-left: 65px;
+    font-size: 25px;
+}
+
+.val-box2{
+    border: 3px solid #ccc;
+    border-radius: 5px;
+    margin-top: 16px;
+    background-color: #f2f2f2;
+}
+.val-box2 img{
+    height: 85px;
+    width: 85px;
+     margin-left: 65px;
+}
+.val-box3{
+    border: 3px solid #ccc;
+    border-radius: 5px;
+    margin-top: 16px;
+    background-color: #f2f2f2;
+}
+
+.val-box3 img{
+    height: 85px;
+    width: 85px;
+     margin-left: 65px;
+}
+
+.val-box4{
+    border: 3px solid #ccc;
+    border-radius: 5px;
+    margin-top: 8px;
+    background-color: #f2f2f2;
+}
+.val-box4 img{
+    height: 85px;
+    width: 85px;
+     margin-left: 65px;
+}
+
+.val-box5{
+    border: 3px solid #ccc;
+    border-radius: 5px;
+    margin-top: 16px;
+    background-color: #f2f2f2;
+}
+.val-box5 img{
+    height: 85px;
+    width: 85px;
+     margin-left: 65px;
+}
+.container13 .row .right1{
+    height: 60vh;
+}
+
+.value2{
+    margin-top: 20px;
+}
+
+.value3{
+    margin-top: 70px;
+}
+.val-box2  h3{
+    font-weight: bolder;
+    letter-spacing: 2px;
+    margin-left: 65px;
+    font-size: 25px;
+}
+.val-box3  h3{
+    font-weight: bolder;
+    letter-spacing: 2px;
+    margin-left: 65px;
+    font-size: 25px;
+}
+.val-box4  h3{
+    font-weight: bolder;
+    letter-spacing: 2px;
+    margin-left: 65px;
+    font-size: 25px;
+}
+.val-box5  h3{
+    font-weight: bolder;
+    letter-spacing: 2px;
+    margin-left: 65px;
+    font-size: 25px;
+}
+.value a{
+    text-decoration: none;
+    color: #212529;
 }
