@@ -13,6 +13,7 @@ from flask import current_app
 import smtplib
 
 
+
 auth = Blueprint('auth',__name__)
 
 @auth.route('/login', methods=['GET' ,'POST'])
@@ -128,7 +129,7 @@ def Booking():
         date = request.form.get('date')
         email = request.form.get('email')
        
-        message= "Your order is booked"
+        message= "Your order is booked Your booking id is "+ str(current_user.bookings) + "Thank you"
         server= smtplib.SMTP("smtp.gmail.com", 587)
         server.starttls()
         server.login(user="sahilj7475@gmail.com",password="Sjadhav@7475")

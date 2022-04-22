@@ -4,6 +4,9 @@ from flask_sqlalchemy import SQLAlchemy
 from os import path
 from flask_mail import Mail
 from flask_login import LoginManager
+from flask_admin import Admin
+from flask_admin.contrib.sqla import ModelView
+from website.auth import admin
 db = SQLAlchemy()
 DB_NAME = "data.db"
 
@@ -13,7 +16,8 @@ def create_app():
     app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:@localhost/lpggas'
     
     db.init_app(app)
-    
+    admin = Admin(app)
+    admin.add_view(ModelView(user, db.session),"auth.admin")
     
 
     from .views import views
@@ -29,6 +33,8 @@ def create_app():
     login_manager = LoginManager()
     login_manager.login_view= 'auth.login'
     login_manager.init_app(app)
+
+    
 
     @login_manager.user_loader
     def load_user(u_id):
