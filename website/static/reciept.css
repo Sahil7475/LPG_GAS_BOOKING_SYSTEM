@@ -1,0 +1,56 @@
+.container9 table tr{
+    font-size: 15px;
+}
+.container9 table tr td{
+    font-size: 15px;
+}
+.container9 .title h1 {
+    margin-bottom: 8px;
+    margin-top: 0px;
+    font-weight: bolder;
+    font-size: 30px;
+    letter-spacing: 3px;
+}
+
+.card-body{
+    width: 100%;
+    height: 45vh;
+    background-color: #f2f2f2;
+}
+.card{
+    width: 40rem;
+    margin-left: 125px;
+    border: 4px solid #ccc;
+    border-radius: 8px;
+    margin-top: 40px;
+   
+}
+.card-body .card-title{
+    font-size: 30px;
+    font-weight: bolder;
+    margin-left: 90px;
+    letter-spacing: 1px;
+}
+
+.container9 .card-body .submit-btn4{
+    width: 50%;
+    background-color: white;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+    height: 5vh;
+    background-color: #ccc;
+    
+}
+
+.btn4{
+    align-items: center;
+    margin-left: 135px;
+    padding: 7px;
+    font-size: 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    letter-spacing: 2px;
+}

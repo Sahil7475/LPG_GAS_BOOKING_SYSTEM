@@ -1,3 +1,37 @@
 h1{
     margin-top: 100px;
 }
+#Testimonials{
+    text-align: center;
+
+    width: 100%;
+    }
+    
+    .testimonial-text{
+      font-size: 3rem;
+      line-height: 1.5;
+    }
+    #press{
+      background-color: #ef8172;
+      text-align: center;
+     
+    }
+    .carousel-control-prev {
+        margin: 0;
+    }
+    .press-logo{
+      width: 15%;
+      margin: 20px 20px 50px;
+    }
+    .cat{
+      padding-top: 10px;
+      width: 15%;
+      border-radius: 200%;
+    }
+    .carousel-item{
+      padding: 5% 17%;
+    }
+.carousel-inner{
+    width: 100%;
+}
+
