@@ -1,10 +1,22 @@
 {% extends "base.html" %} {% block title %}Home{% endblock %} {% block content
 %}
 
-<h1>hello</h1>
-<h1>{{ user.select }}</h1>
-<!-- <h1>{{ book.booking_address }}</h1> -->
-<h1>{{ user.payments }}</h1>
-<h1>{{ user.u_id }}</h1>
+<div class="container9">
+    
+    <div class="card" >
+        
+        <div class="card-body">
+          <h5 class="card-title">Order Status</h5>
+          <p class="card-text">Booking id</p>
+          <p class="card-text">Booking Date</p>
+          <p class="card-text">Adress</p>
+          <p class="card-text">Contact</p>
+          <button type="button" class="btn4 btn-primary ">Cancel</button>
+        </div>
+      </div>
+      <!-- <div class="button">
+        <input type="submit" value="proceed" class="submit-btn">
+        <input type="submit" value="Reset" class="submit-btn"></div> -->
+</div>
 
 {% endblock %}
