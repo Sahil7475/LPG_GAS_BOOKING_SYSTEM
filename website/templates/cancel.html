@@ -1,0 +1,52 @@
+
+{% extends "base.html" %} {% block title %}Log-in{% endblock %} {% block content
+    %}
+	<div class="container">
+        <div class="main">
+            <div class="main-center">
+           
+                <form class="" method="post" action="#">
+                    
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                            <div class="input-group">
+                                <span class="input-group-addon"></span>
+            <input type="text" class="form-control" name="name" id="name"  placeholder="Enter your Name"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                            <div class="input-group">
+                                <span class="input-group-addon"></span>
+                                <input type="text" class="form-control" name="email" placeholder="Enter your Email"/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirm">Your Booking id</label>
+                            <div class="input-group">
+                                <span class="input-group-addon"></span>
+                                <input type="text" class="form-control" name="confirm" placeholder=""/>
+                            </div>
+                    </div>
+                   
+
+                    
+
+                    <div class="form-group">
+                        <label for="confirm">Reason of cancellation</label>
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-reason fa-lg" aria-hidden="true"></i></span>
+                                <input type="text" class="form-control" name="confirm" placeholder=""/>
+                            </div>
+                    </div>
+
+            <button type="submit" class="submit">Submit</button>
+            
+                    
+                </form>
+            </div><!--main-center"-->
+        </div><!--main-->
+    </div><!--container-->
+
+    {% endblock %}

@@ -1,5 +1,7 @@
+
 .container9 table tr{
     font-size: 15px;
+    color: aliceblue;
 }
 .container9 table tr td{
     font-size: 15px;
@@ -9,13 +11,25 @@
     margin-top: 0px;
     font-weight: bolder;
     font-size: 30px;
+    color: aliceblue;
     letter-spacing: 3px;
 }
-
+.gas{
+    text-align: center;
+    color: aliceblue;
+    font-size: 20px;
+}
+#contain{
+    margin-left: 340px;
+}
+.foot{
+  margin-left: 180px;
+}
 .card-body{
     width: 100%;
     height: 45vh;
     background-color: #f2f2f2;
+    color: aliceblue;
 }
 .card{
     width: 40rem;
@@ -23,6 +37,7 @@
     border: 4px solid #ccc;
     border-radius: 8px;
     margin-top: 40px;
+    color: aliceblue;
    
 }
 .card-body .card-title{
@@ -30,6 +45,7 @@
     font-weight: bolder;
     margin-left: 90px;
     letter-spacing: 1px;
+    color: aliceblue;
 }
 
 .container9 .card-body .submit-btn4{
@@ -42,7 +58,7 @@
     color: black;
     height: 5vh;
     background-color: #ccc;
-    
+    color: aliceblue;
 }
 
 .btn4{
@@ -53,4 +69,28 @@
     margin-top: 10px;
     border-radius: 5px;
     letter-spacing: 2px;
+}
+.btn{
+    margin-left: 230px;
+}
+.return{
+    margin-left: 230px;
+    
+}
+
+.col-lg-6{
+    color: aliceblue;
+}
+.col-lg-12{
+    color: aliceblue;
+    
+}
+td{
+    color: aliceblue;
+}
+th{
+    color: aliceblue;
+}
+.print{
+    margin-left: 400px;
 }

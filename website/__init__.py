@@ -3,6 +3,7 @@ from flask_sqlalchemy import SQLAlchemy
 from os import path
 from flask_mail import Mail
 from flask_login import LoginManager
+from mysql import connector
 db = SQLAlchemy()
 DB_NAME = "data.db"
 
@@ -12,7 +13,7 @@ def create_app():
     app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:@localhost/lpggas'
     
     db.init_app(app)
-    
+  
     
 
     from .views import views

@@ -2,7 +2,7 @@
     %}
 
 
-<div class="container bootdey">
+<div class="container bootdey" id="contain">
     <div class="row invoice row-printable">
         <div class="col-md-10">
             <!-- col-lg-12 start here -->
@@ -20,9 +20,9 @@
                             <!-- col-lg-6 start here -->
                             <div class="invoice-from">
                                 <ul class="list-unstyled text-right">
-                                    <li>Dash LLC</li>
-                                    <li>2500 Ridgepoint Dr, Suite 105-C</li>
-                                    <li>Austin TX 78754</li>
+                                    <li>LPG GAS</li>
+                                    <li>2500 ,Tirupati, Vile parle</li>
+                                    <li>MUMBAI 410206</li>
                                     <li>VAT Number EU826113958</li>
                                 </ul>
                             </div>
@@ -33,20 +33,21 @@
                             <div class="invoice-details mt25">
                                 <div class="well">
                                     <ul class="list-unstyled mb0">
-                                        <li><strong>Invoice</strong> #936988</li>
-                                        <li><strong>Invoice Date:</strong> Monday, October 10th, 2015</li>
-                                        <li><strong>Due Date:</strong> Thursday, December 1th, 2015</li>
-                                        <li><strong>Status:</strong> <span class="label label-danger">UNPAID</span></li>
+                                        <li><strong>Invoice</strong> #936</li>
+                                        <li><strong>Invoice Date: </strong>{{date}}</li>
+                                        <li><strong>Due Date: </strong>30-05-2022  </li>
+                                        <li><strong>Status:</strong> <span class="label label-danger">PAID</span></li>
                                     </ul>
                                 </div>
                             </div>
                             <div class="invoice-to mt25">
                                 <ul class="list-unstyled">
                                     <li><strong>Invoiced To</strong></li>
-                                    <li>Jakob Smith</li>
-                                    <li>Roupark 37</li>
-                                    <li>New York, NY, 2014</li>
-                                    <li>USA</li>
+                                    <li>Booking id : {{user.u_id}} </li>
+                                    <li>{{user.u_name}}</li>
+                                    <li>{{user.u_address}}</li>
+                                    
+                                    
                                 </ul>
                             </div>
                             <div class="invoice-items">
@@ -61,44 +62,27 @@
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td>1024MB Cloud 2.0 Server - elisium.dynamic.com (12/04/2014 - 01/03/2015)</td>
+                                                <td>LPG GAS CYLINDER</td>
                                                 <td class="text-center">1</td>
-                                                <td class="text-center">$25.00 USD</td>
+                                                <td class="text-center">936 ₹</td>
                                             </tr>
-                                            <tr>
-                                                <td>Logo design</td>
-                                                <td class="text-center">1</td>
-                                                <td class="text-center">$200.00 USD</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Backup - 1024MB Cloud 2.0 Server - elisium.dynamic.com</td>
-                                                <td class="text-center">12</td>
-                                                <td class="text-center">$12.00 USD</td>
-                                            </tr>
+                                           
                                         </tbody>
                                         <tfoot>
                                             <tr>
                                                 <th colspan="2" class="text-right">Sub Total:</th>
-                                                <th class="text-center">$237.00 USD</th>
+                                                <th class="text-center">936 ₹</th>
                                             </tr>
-                                            <tr>
-                                                <th colspan="2" class="text-right">20% VAT:</th>
-                                                <th class="text-center">$47.40 USD</th>
-                                            </tr>
-                                            <tr>
-                                                <th colspan="2" class="text-right">Credit:</th>
-                                                <th class="text-center">$00.00 USD</th>
-                                            </tr>
-                                            <tr>
-                                                <th colspan="2" class="text-right">Total:</th>
-                                                <th class="text-center">$284.4.40 USD</th>
-                                            </tr>
+                                            
+                                           
                                         </tfoot>
                                     </table>
                                 </div>
+                               
                             </div>
                             <div class="invoice-footer mt25">
-                                <p class="text-center">Generated on Monday, October 08th, 2015 <a href="#" class="btn btn-default ml15"><i class="fa fa-print mr5"></i> Print</a></p>
+                                <p class="text-center">Generated on {{date}} </p>
+                                <button type="submit" onclick="myfunc()" class="btn btn-dark print"><i class="fa fa-print mr5 "></i> Print</button>
                             </div>
                         </div>
                         <!-- col-lg-12 end here -->
@@ -110,7 +94,22 @@
         </div>
         <!-- col-lg-12 end here -->
     </div>
+    <div class="foot">
+        <strong class="gas">Your Gas Will be Delivered Soon, Please keep these reciept </strong><br>
+        
+    <div class="return">
+        <a href="/home">Return to main page</a><br>
+        <a href="/cancel">To cancel booking click here</a>
     </div>
-
+    </div>
+    
+ 
+    </div>
+    <script type="text/javascript">
+        function myfunc(){
+        
+            window.print();
+        }
+    </script>
     {% endblock %}
     

@@ -13,7 +13,7 @@
     width:100%;
     padding: 25px 30px;
     border-radius: 5px;
-    
+    color: aliceblue;
     
     
 
@@ -65,4 +65,9 @@ form .button1 input{
 .signup{
     padding-top: 50px;
     font-size: 15px;
+}
+
+.title{
+    font-size: 30px;
+    color: aliceblue;
 }

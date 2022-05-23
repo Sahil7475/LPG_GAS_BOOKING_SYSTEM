@@ -1,0 +1,24 @@
+{% extends "base.html" %} {% block title %}Home{% endblock %} 
+
+{% block content %}
+
+
+
+
+<div class="container8">
+    <div class="title"><h1>Feedback & Complaint</h1></div>
+<form METHOD="POST">
+
+  <input class="useremail" type="text" name="email" value={{user.u_email}}></input>
+        <textarea type="text" name="complaint" size="50"></textarea>
+       
+      <br><br>
+      <div class="button">
+       <!--  <label for="email" name="email">{{user.u_email}}</label> -->
+       
+        <input type="submit" value="Proceed" class="submit-btn">
+        <input type="reset" value="Reset" class="submit-btn"></div>
+    </form>
+</div>
+
+{% endblock %}

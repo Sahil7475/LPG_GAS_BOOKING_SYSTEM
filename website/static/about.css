@@ -1,0 +1,17 @@
+p{
+    text-align: center;
+    margin-top: 50px;
+    line-height: 2rem;
+    font-size: 15px;
+    display: flex;
+/*     text-align: justify; */
+    justify-content: center;
+    color: #EB4F4F;
+    font-weight: bold;
+}
+.abt{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 20px;
+    color: yellow;
+}

@@ -18,17 +18,25 @@ tr td{
     margin-top: 15px;
     border-color: #ccc;
     margin-left: 5px;
+    color: #EB4F4F;
 }
 tr .email td{
     margin-top: 25px;
 }
-
+/* 
 table tr td h1{
     align-items: center;
     text-align: center;
     font-size: 45px;
+} */
+.contactus{
+    align-items: center;
+    text-align: center;
+    font-size: 45px;
+    color: yellow;
 }
 
 tr td .address{
     text-align: center;
+    color: #EB4F4F;
 }

@@ -1,5 +1,6 @@
 body{
    height: 75vh;
+   background-color: #151D3B;
 }
 
 :root{
@@ -132,6 +133,7 @@ section{
  } */
  .header-1 #logout{
   margin-left: 10px;
+  /*  */
  }
  img{
     height: auto;

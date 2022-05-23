@@ -1,37 +1,20 @@
-h1{
-    margin-top: 100px;
+.left1{
+  border: red;
+  
+  height:35vh;
 }
-#Testimonials{
-    text-align: center;
-
-    width: 100%;
-    }
-    
-    .testimonial-text{
-      font-size: 3rem;
-      line-height: 1.5;
-    }
-    #press{
-      background-color: #ef8172;
-      text-align: center;
-     
-    }
-    .carousel-control-prev {
-        margin: 0;
-    }
-    .press-logo{
-      width: 15%;
-      margin: 20px 20px 50px;
-    }
-    .cat{
-      padding-top: 10px;
-      width: 15%;
-      border-radius: 200%;
-    }
-    .carousel-item{
-      padding: 5% 17%;
-    }
-.carousel-inner{
-    width: 100%;
+.left1 img{
+ 
+  height: 80vh;
+  width: 1680px;
 }
-
+.right1 h1{
+  font-size: 30px;
+  margin-top: 200px;
+  margin-right: 130px;
+  font-weight: bolder;
+  color: red;
+}
+.right1 h2{
+  margin-top: 12px;
+}

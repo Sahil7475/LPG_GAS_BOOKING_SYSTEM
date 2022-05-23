@@ -12,36 +12,37 @@
     align-items: center;
     border: none;
     border: 2px solid  #ccc;
-   
+    
 }
-.container{
+.containers{
     max-width: 750px;
     width:100%;
     padding: 25px 30px;
     border-radius: 5px;
-    
+    color: aliceblue;
     
     
 
 }
-.container .title{
+.containers .title{
     font-size: 25px;
     font-weight: 500;
     margin-bottom: 20px;
+    color: aliceblue;
 }
 
-/* .container .title::before{
+/* .containers .title::before{
     content:'';
     position:absolute;
     height: 3px;
     width: 30px;
     background-color: aqua;
 } */
-.container form .user-details{
+.containers form .user-details{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
+    color: aliceblue;
 
 
 }
@@ -56,7 +57,7 @@ form .user-details .input-box{
     margin-bottom: 5px;
     display: block;
 }
-.container form .user-details .input-box{
+.containers form .user-details .input-box{
     width:calc(100%/2-20px);
 
 

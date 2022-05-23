@@ -1,25 +1,28 @@
 .container7 .inputbox input{
     border-color: #ccc;
-}
 
+}
+.body1{
+    border: none;
+}
 .container7{
     background-color: #f2f2f2;
-    border: 2px solid  #ccc;
+    border: none;
     opacity: 1;
     border-width: thick;
     color: black;
     box-shadow: #ccc;
 }
 .container7{
-    min-height: 70vh;
-    
-  margin-left: 45px;
-  border-color: #ccc !important;
+    min-height: 50vh;
+    margin-left: 45px;
+    margin-top: 100px;
+    border-color: #ccc !important;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 15px;
-    width: 500px;
+    width: 400px;
     flex-flow: column;
     border-radius: 15px;
 }

@@ -1,5 +1,7 @@
 
+import imp
 from logging import error
+from operator import getitem
 from flask import Blueprint,render_template, request ,flash, redirect, url_for,Flask
 from .models import user
 from .models import payment
@@ -11,6 +13,7 @@ from flask_mail import Mail, Message
 from flask_login import login_user,login_required,logout_user,current_user
 from flask import current_app
 import smtplib
+import datetime
 
 
 
@@ -113,7 +116,7 @@ def Payment():
         year = request.form.get('year')
         book=current_user.u_id
 
-        add=payment(payment_mode=mode,amount=888,u_id=current_user.u_id,booking_id=current_user.u_id)
+        add=payment(amount=888,u_id=current_user.u_id,booking_id=current_user.u_id)
         db.session.add(add)
         db.session.commit()
         flash("Payment successful", category="success")
@@ -129,11 +132,11 @@ def Booking():
         date = request.form.get('date')
         email = request.form.get('email')
 
-        message= "Your order is booked"
+        message= "Your order is booked\n Thank You for Using Our  LPG GAS Booking Site"
         server= smtplib.SMTP("smtp.gmail.com", 587)
         server.starttls()
-        server.login(user="sahilj7475@gmail.com",password="Sjadhav@7475")
-        server.sendmail(from_addr="sahilj7475@gmail.com", to_addrs=email,msg=message)
+        server.login(user="bookinggaslpg@gmail.com",password="#Booking123")
+        server.sendmail(from_addr="bookinggaslpg@gmail.com", to_addrs=email,msg=message)
 
 
         add=booking(u_id=current_user.u_id,booking_delivery_date=date,booking_address=address)
@@ -147,4 +150,47 @@ def Booking():
 
 @auth.route('/reciept', methods=['GET' ,'POST'])
 def reciept():
-    return render_template("reciept.html", user=current_user)
+    now= datetime.datetime.now()
+    date=now.strftime("%d-%m-%y %H:%M:%S")
+    return render_template("reciept.html", user=current_user, date=date)
+
+@auth.route('/cancel', methods=['GET' ,'POST'])
+def cancel():
+    now= datetime.datetime.now()
+    date=now.strftime("%d-%m-%y %H:%M:%S")
+    if request.method == 'POST':
+        email = request.form.get('email')
+
+        message= "Your order is Cancelled Succesfully"
+        server= smtplib.SMTP("smtp.gmail.com", 587)
+        server.starttls()
+        server.login(user="bookinggaslpg@gmail.com",password="#Booking123")
+        server.sendmail(from_addr="bookinggaslpg@gmail.com", to_addrs=email,msg=message)
+        
+    
+        return redirect(url_for('auth.dashboard'))
+    
+    return render_template("cancel.html", user=current_user, date=date)
+
+
+@auth.route('/about')
+def about():
+    return render_template('about.html', user=current_user)
+
+
+@auth.route('/feedback',methods=['GET','POST'])
+def feedback():
+    if request.method == 'POST':
+        email=request.form.get('email')
+        complaint= request.form.get('complaint')
+        
+        message1= complaint
+        message2="\nYour Feedback/Complaint is Recieved Succesfully we will look after you "
+        server= smtplib.SMTP("smtp.gmail.com", 587)
+        server.starttls()
+        server.login(user="bookinggaslpg@gmail.com",password="#Booking123")
+        server.sendmail(from_addr="bookinggaslpg@gmail.com", to_addrs=email,msg=message1+message2)
+        flash("Your Feedback/Complaint is sent succesfully to our admins",category="success")
+
+        return redirect(url_for('auth.dashboard'))
+    return render_template('feedback.html', user=current_user)

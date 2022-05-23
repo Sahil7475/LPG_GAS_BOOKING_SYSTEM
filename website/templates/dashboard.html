@@ -5,34 +5,13 @@
     <div class="col left" >
       <div class="card">
         <div class="card-body">
-          <div class="input-box">
-            <span class="details">personal-info</span>
-          </div>
-          <div class="input-box">
-            <span class="details">Name</span>
-            {{ user.u_name }}
-          </div>
-          <div class="input-box">
-            <span class="details">id</span>
-            {{ user.u_id }}
-          </div>
-          <div class="input-box">
-            <span class="details">Address</span>
-            {{ user.u_address }}
-          </div>
-          <div class="input-box">
-            <span class="details">Email</span>
-            {{ user.u_email }}
-          </div>
-          <div class="input-box">
-            <span class="details">Mobile</span>
-            {{ user.u_contact_no }}
-          </div>
-          <div class="input-box">
-            <span class="details">DOB</span>
-            {{ user.u_date_of_birth }}
-          </div>
-          </div>
+          <div class="val-box">
+          <h5 class="card-title">Personal Information</h5>
+          <p >Name: {{user.u_name}}</p>
+          <p >ID: {{user.u_id}}</p>
+          <p >Address: {{user.u_address}}</p>
+          <p>Contact: {{user.u_contact_no}}</p>
+          <p >Email: {{user.u_email}}</p>
           <!-- <a href="#" class="card-link">Another link</a> -->
         </div>
       </div>
@@ -41,43 +20,35 @@
     <div class="col right1" >
       <div class="value2">
     <div class="value">
+      <a href="/dashboard">
       <div class="val-box1">
+        
         <img src="static/profile.png">
         <h3> Profile</h3>
-
+      </a>
       </div>
     </div>
   
     <div class="value">
-      <a class="col-5 right2" href="/booking">
+      <a href="/booking">
       <div class="val-box2">
-        <!-- <i class="fa fa-user" aria-hidden="true"></i> -->
+       
         <img src="static/cylinder.png">
         <h3> Book Order</h3>
       </div>
     </a>
-    </div>
-  
-    <div class="value">
-      <div class="val-box3">
-        <img src="static/track.png">
-        <h3> Track Order</h3>
-      </div>
     </div>
     </div>
     </div>
     <div class="col" >
       <div class="value3">
       <div class="value">
-        <div class="val-box4">
-          <img src="static/history.png">
-          <h3> Order History</h3>
-        </div>
-  
+        <a href="/feedback">
         <div class="val-box5">
           <img src="static/chat.png">
-          <h3> Feedback & Complaints</h3>
+          <h3> Feedback and Complaints </h3>
         </div>
+      </a>
       </div>
     </div>
   </div>
